@@ -123,7 +123,7 @@ meta_top_left_coordinates "TL coordinates comment (#R, #P)"
 * Basic types
 */
 str "comment string"
- = characters:([^\n])+ {
+ = characters:([^\r\n])+ {
     return characters.join("");
 }
 
